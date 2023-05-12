@@ -369,6 +369,7 @@ html {
   justify-content: center;
   gap: 30px;
 }
+
 .button-style {
   background: #f5f4fa;
   font: #212121;
@@ -381,6 +382,37 @@ html {
   padding-bottom: 50px;
   flex-wrap: wrap;
   padding-top: 94px;
+}
+
+.project_logo:hover .overlay {
+  top: 0;
+}
+
+.project_logo {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.project_logo .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.9;
+  background: rgba(33, 150, 243, 0.9);
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  transition-property: top, right, bottom, left;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  top: 100;
 }
 
 .project-section-button_item-all {
@@ -711,4 +743,52 @@ html {
 .footer-section {
   background: #2f303a;
   padding: 60px 0px;
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(25, 28, 38, 0.2);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  padding: 16px;
+  background: #fff;
+  width: 50%;
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  outline: none;
+  background: #ffffff;
+  width: 30px;
+  height: 30px;
+  right: 16px;
+  top: 16px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #2196f3;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
 }

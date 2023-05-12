@@ -60,7 +60,7 @@
               </h2>
             </li>
             <li class="hero-section_item">
-              <button type="button" class="request-service-button">
+              <button  data-modal-open type="button" class="request-service-button">
                 Request our service
               </button>
             </li>
@@ -413,6 +413,22 @@
           </address>
         </div>
       </div>
+    
     </footer>
+
+    <!--Modal-->
+
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>&times;</button>
+        Continutul modalului
+      </div>
+    </div>
+
+    <script src="./modal/modal.js" type="text/javascript"></script>
+    <script>
+      feather.replace();
+    </script>
+
   </body>
 </html>
