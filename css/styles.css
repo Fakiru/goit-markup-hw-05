@@ -393,6 +393,9 @@ html {
   width: 370px;
   height: 294px;
   overflow: hidden;
+  text-align: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .project_logo .overlay {
@@ -407,12 +410,13 @@ html {
   color: #fff;
   overflow: hidden;
   text-align: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
   transition-property: top, right, bottom, left;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  top: 100;
+  top: 100%;
 }
 
 .project-section-button_item-all {
@@ -422,7 +426,7 @@ html {
   letter-spacing: 0.06em;
   color: #21212f;
   padding: 0;
-  width: 64px;
+  width: 120px;
   height: 38px;
   background: #f5f4fa;
   cursor: pointer;
@@ -430,6 +434,13 @@ html {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.project-section-button_item-all :hover,
+.project-section-button_item-all :focus {
+  transform: scale(1.05);
+  color: #2196f3;
+  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-section-button_item-web {
@@ -449,6 +460,13 @@ html {
   border-radius: 0px 0px 4px 4px;
 }
 
+.project-section-button_item-web:hover,
+.project-section-button_item-web:focus {
+  transform: scale(1.05);
+  color: #2196f3;
+  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .project-section-button_item-apps {
   font-size: 16px;
   line-height: 2;
@@ -464,6 +482,13 @@ html {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.project-section-button_item-apps:hover,
+.project-section-button_item-apps:focus {
+  transform: scale(1.05);
+  color: #2196f3;
+  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-section-button_item-design {
@@ -483,6 +508,13 @@ html {
   border-radius: 0px 0px 4px 4px;
 }
 
+.project-section-button_item-design :hover,
+.project-section-button_item-design :focus {
+  transform: scale(1.05);
+  color: #2196f3;
+  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .project-section-button_item-marketing {
   font-size: 16px;
   line-height: 2;
@@ -500,10 +532,11 @@ html {
   border-radius: 0px 0px 4px 4px;
 }
 
-.project-section-button_list a:hover,
-.project-section-button_list a:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+.project-section-button_item-marketing :hover,
+.project-section-button_item-marketing :focus {
+  transform: scale(1.05);
+  color: #2196f3;
+  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-contact_item a:hover,
@@ -536,11 +569,9 @@ html {
   color: #2196f3;
 }
 
-.header-section-nav_item .nav_link.active {
+.header-section-nav_item .nav_link {
   color: #2196f3;
   padding-bottom: 27px;
-  border-bottom: 4px solid #2196f3;
-  border-radius: 2px;
   cursor: pointer;
 }
 
@@ -554,8 +585,11 @@ html {
   cursor: pointer;
 }
 
-.header-section-nav_item a:focus::after {
+.header-section-nav_item a:hover::after {
   visibility: visible;
+  display: inline-block;
+  position: relative;
+  color: #2196f3;
 }
 
 .header-section-nav_item a::after {
@@ -563,9 +597,9 @@ html {
   border: 2px solid #2196f3;
   width: 100%;
   position: absolute;
-  bottom: -30px;
+  bottom: -20px;
   border-radius: 2px;
-  visibility: hidden;
+  visibility: visible;
   left: 0;
 }
 
@@ -777,10 +811,12 @@ html {
   height: 30px;
   right: 16px;
   top: 16px;
-  background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
 }
 
 .close-btn:hover,
