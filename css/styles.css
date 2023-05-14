@@ -425,6 +425,8 @@ html {
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .project-section-button_item-all {
