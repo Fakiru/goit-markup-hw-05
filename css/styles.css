@@ -387,6 +387,7 @@ html {
 
 .project_logo:hover .overlay {
   top: 0;
+  justify-content: center;
 }
 
 .project_logo {
@@ -394,7 +395,6 @@ html {
   width: 370px;
   height: 294px;
   overflow: hidden;
-  text-align: center;
   text-align: center;
   justify-content: center;
 }
@@ -418,6 +418,13 @@ html {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   top: 100%;
+}
+.overlay p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .project-section-button_item-all {
