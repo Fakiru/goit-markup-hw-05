@@ -20,6 +20,7 @@
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .unstyled-list {
@@ -562,11 +563,13 @@ html {
   display: flex;
   flex-direction: row;
   gap: 40px;
+  cursor: pointer;
 }
 
 .header-section-nav_item .nav_link:hover,
 .header-section-nav_item .nav_link:focus {
   color: #2196f3;
+  cursor: pointer;
 }
 
 .header-section-nav_item .nav_link {
@@ -597,9 +600,9 @@ html {
   border: 2px solid #2196f3;
   width: 100%;
   position: absolute;
-  bottom: -20px;
+  bottom: -25px;
   border-radius: 2px;
-  visibility: visible;
+  visibility: hidden;
   left: 0;
 }
 
