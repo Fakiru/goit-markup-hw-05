@@ -583,7 +583,7 @@ html {
 
 .header-section-nav_item .nav_link {
   color: #2196f3;
-  padding-bottom: 27px;
+
   cursor: pointer;
 }
 
@@ -599,7 +599,8 @@ html {
 
 .header-section-nav_item a:hover::after {
   visibility: visible;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   position: relative;
   color: #2196f3;
 }
@@ -609,7 +610,7 @@ html {
   border: 2px solid #2196f3;
   width: 100%;
   position: absolute;
-  bottom: -25px;
+  bottom: -30px;
   border-radius: 2px;
   visibility: hidden;
   left: 0;
@@ -622,6 +623,7 @@ html {
 .header-section-nav_list {
   display: flex;
   margin-left: 90px;
+  margin-right: 90px;
   gap: 50px;
 }
 
